@@ -45,21 +45,21 @@
             					    </div>
             					</div>
         					    <div class="margin_40 clearfix"></div>
-        					    <!--<div class="row">-->
-                 <!--                   <div class="col-xs-12">-->
-                 <!--                       <button class="animated_btn" type="submit" :disabled="formSuccess">Subscribe</button>-->
-                 <!--                   </div>-->
-                 <!--               </div>-->
-                 <!--               <div id="send_contact_success" class="alert alert-success" role="alert" v-show="formSuccess">-->
-                 <!--                   <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>-->
-                 <!--                   <span class="sr-only">{{$t("newsletter_page.success")}} : </span>-->
-                 <!--                   Thank you! Your subscription has been confirmed.-->
-                 <!--               </div>-->
-                 <!--               <div id="send_contact_error" class="alert alert-danger" role="alert" v-show="formError">-->
-                 <!--                   <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>-->
-                 <!--                   <span class="sr-only">{{$t("newsletter_page.error")}} : </span>-->
-                 <!--                   There was an error when trying to submit your request. Please try again later.-->
-                 <!--               </div>-->
+        					    <div class="row">
+                                    <div class="col-xs-12">
+                                        <button class="animated_btn" type="submit" :disabled="formSuccess">Subscribe</button>
+                                    </div>
+                                </div>
+                                <!--<div id="send_contact_success" class="alert alert-success" role="alert" v-show="formSuccess">-->
+                                <!--    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>-->
+                                <!--    <span class="sr-only">{{$t("newsletter_page.success")}} : </span>-->
+                                <!--    Thank you! Your subscription has been confirmed.-->
+                                <!--</div>-->
+                                <!--<div id="send_contact_error" class="alert alert-danger" role="alert" v-show="formError">-->
+                                <!--    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>-->
+                                <!--    <span class="sr-only">{{$t("newsletter_page.error")}} : </span>-->
+                                <!--    There was an error when trying to submit your request. Please try again later.-->
+                                <!--</div>-->
                             </form> 
                         </div>
                     </div>
