@@ -119,10 +119,10 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                         id: "menu2",
                         href: "#",
                         sub_menu: [
-                            {
-                                name: "Center Information",
-                                href: "/center-information"
-                            },
+                            // {
+                            //     name: "Center Information",
+                            //     href: "/center-information"
+                            // },
                             {
                                 name: "Contact Us",
                                 href: "/contact-us"
