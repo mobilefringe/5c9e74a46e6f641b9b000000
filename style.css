@@ -243,7 +243,7 @@ img{
     box-shadow: 1px 1px 7px rgba(12, 12, 12, 0.3);
     .site_logo {
         padding-bottom: 28px;
-        max-width: 221px;
+        max-width: 900px;
         transition: all 0.3s ease;
         img {
             max-width: 40%;
