@@ -11,11 +11,11 @@ define([], function () {
             //     breadcrumb: 'Center Information'
             // },
             children: [
-                {   
-                    path: '',
-                    component: view('center_information'),
-                    name: 'center-info'
-                },
+                // {   
+                //     path: '',
+                //     component: view('center_information'),
+                //     name: 'center-info'
+                // },
                 {
                     path: '/contact-us',
                     component: view('default'),
