@@ -245,6 +245,7 @@ img{
         padding-bottom: 28px;
         max-width: 900px;
         transition: all 0.3s ease;
+        text-align: center;
         img {
             max-width: 40%;
         }
