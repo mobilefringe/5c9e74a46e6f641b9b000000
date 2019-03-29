@@ -13,7 +13,7 @@
                         <div class="col-md-12">
                             <breadcrumb></breadcrumb>
                             <div v-if="pageContent" v-html="pageContent.body"></div>
-                            <form class="newsletter_form form-horizontal" action="//mobilefringe.createsend.com/t/d/s/vjklyu/" method="post" @submit.prevent="validateBeforeSubmit">
+                            <form class="newsletter_form form-horizontal" action="//mobilefringe.createsend.com/t/d/s/bzujh/" method="post" @submit.prevent="validateBeforeSubmit">
                                 <div class="row">
                                     <div class="col-sm-6" >
                                         <label for="fieldgjidii" class="accessibility">First Name</label>
