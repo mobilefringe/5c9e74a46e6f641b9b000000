@@ -149,14 +149,15 @@
                         console.log("Error loading data: " + e.message);
                     }
                 },
+                dropPin(store) {
+                    console.log(store)
+                    this.pngMapRef.showLocation(store.id);
+                },
                 onOptionSelect(option) {
                     this.$nextTick(function() {
                         this.storeSearch = ""
                     });
-                    this.svgMapRef.addMarker(option);
-                },
-                dropPin(store) {
-                    this.$refs.mapplic_ref.showLocation(store.svgmap_region);
+                    this.pngMapRef.showLocation(option.id);
                 }
             }
         });
