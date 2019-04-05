@@ -89,7 +89,7 @@
         font-size: 0.8rem;
         line-height: 1.5rem;
         margin:auto;
-        color:#497e71;
+        color:$primary;
     }
 </style>
 <script>
