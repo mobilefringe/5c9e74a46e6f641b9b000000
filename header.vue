@@ -79,6 +79,7 @@
                 return {
                     showMenu: false,
                     showMobileMenu: false,
+                    showDropDown: false,
                     noScroll: false,
                     windowWidth: 0,
                     scrollY: false,
