@@ -123,7 +123,7 @@ define([], function () {
                 {
                     path: '',
                     component: view('events_and_promotions'),
-                    name: 'events'
+                    name: 'Events and Promotions'
                 },
                 {
                     path: ':id',
