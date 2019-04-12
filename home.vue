@@ -218,7 +218,7 @@
                         var showOnWebDate = moment.tz(value.show_on_web_date, this.timezone).format();
                         if (today >= showOnWebDate) {
                             if (_.includes(value.image_url, 'missing')) {
-                                value.image_url = "//codecloud.cdn.speedyrails.net/sites/5b1550796e6f641cab010000/image/png/1529532181000/promoplaceholder2@2x.png";
+                                value.image_url = "//codecloud.cdn.speedyrails.net/sites/5c9e74a46e6f641b9b000000/image/png/1554995111000/miramesa_default.png";
                             }
                             // Sort Featured Promotions
                             if (value.is_featured) {
