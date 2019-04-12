@@ -37,6 +37,14 @@
                 }
             },
             created() {
+                var temp_repo = this.findRepoByName('Leasing Banner');
+                    if(temp_repo != null && temp_repo !==undefined) {
+                        this.pageBanner = temp_repo.images[0];
+                    } else {
+                        this.pageBanner = {
+                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5c9e74a46e6f641b9b000000/image/png/1554994866000/miramesa_banner.png"
+                        }
+                    }
                 this.updateCurrentPage(this.id);
             },
             watch: {
