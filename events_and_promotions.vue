@@ -118,7 +118,7 @@
                     //     this.pageBanner = temp_repo[0];
                     // } else {
                         this.pageBanner = {
-                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5b5f2c136e6f644fcb5b0100/image/jpeg/1529532304000/insidebanner2.jpg"
+                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5c9e74a46e6f641b9b000000/image/png/1554994866000/miramesa_banner.png"
                         }
                     // }
 
