@@ -20,12 +20,12 @@
                                 <!--<img class="store_details_image center-block" :src="currentStore.store_front_url_abs" :alt="currentStore.name + ' Logo'" />-->
                                 <div v-if="currentStore.no_logo" class="store_details_no_logo center-block">
                                     <div class="no_logo">
-                                        <img class="transparent_logo" src="//codecloud.cdn.speedyrails.net/sites/5b1550796e6f641cab010000/image/png/1536094421888/default_background.png" alt="logo">
+                                        <img class="transparent_logo" src="//codecloud.cdn.speedyrails.net/sites/5c9e74a46e6f641b9b000000/image/png/1554995111000/miramesa_default.png" alt="logo">
                                         <p class="store_details_name">{{ currentStore.name }}</p>
                                     </div>    
                                 </div>
                                 <div id="store_dets_logo_container" v-else>
-                                    <img class="transparent_logo" src="//codecloud.cdn.speedyrails.net/sites/5b1550796e6f641cab010000/image/png/1536094421888/default_background.png" alt="logo">
+                                    <img class="transparent_logo" src="//codecloud.cdn.speedyrails.net/sites/5c9e74a46e6f641b9b000000/image/png/1554995111000/miramesa_default.png" alt="logo">
                     			    <img  class="store_details_image" :src="currentStore.store_front_url_abs" :alt="currentStore.name">
                                 </div>
                                 <div class="margin_20 center" v-if="currentStore.phone">
@@ -163,7 +163,7 @@
                     }
                     else {
                         this.pageBanner = {
-                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5b71eb886e6f6450013c0000/image/jpeg/1529532304000/insidebanner2.jpg"
+                            "image_url": "//codecloud.cdn.speedyrails.net/sites/5c9e74a46e6f641b9b000000/image/png/1554994866000/miramesa_banner.png"
                         }
                     }
                     
@@ -255,7 +255,7 @@
                             var current_promo = vm.findPromoById(value);
                             
                             if (_.includes(current_promo.image_url, 'missing')) {
-                                current_promo.image_url = "//codecloud.cdn.speedyrails.net/sites/5b8712636e6f641ebd220000/image/png/1529532181000/promoplaceholder2@2x.png";
+                                current_promo.image_url = "//codecloud.cdn.speedyrails.net/sites/5c9e74a46e6f641b9b000000/image/png/1554995111000/miramesa_default.png";
                             }
     
                             temp_promo.push(current_promo);
@@ -268,7 +268,7 @@
                             var current_event = vm.findEventById(value);
                             
                             if (_.includes(current_event.image_url, 'missing')) {
-                                current_event.image_url = "//codecloud.cdn.speedyrails.net/sites/5b8712636e6f641ebd220000/image/png/1529532187000/eventsplaceholder2@2x.png";
+                                current_event.image_url = "//codecloud.cdn.speedyrails.net/sites/5c9e74a46e6f641b9b000000/image/png/1554995111000/miramesa_default.png";
                             }
     
                             temp_event.push(current_event);
