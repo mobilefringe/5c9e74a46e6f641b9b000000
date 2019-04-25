@@ -125,39 +125,19 @@
             created (){
                 this.loadData().then(response => {
                     var temp_repo = this.findRepoByName('Directory Banner');
-                    if(temp_repo !== null && temp_repo !== undefined) {
+                    if (temp_repo !== null && temp_repo !== undefined) {
                        temp_repo = temp_repo.images;
                        this.pageBanner = temp_repo[0];
-                    }
-                    else {
+                    } else {
                         this.pageBanner = {
                             "image_url": "//codecloud.cdn.speedyrails.net/sites/5c9e74a46e6f641b9b000000/image/png/1554994866000/miramesa_banner.png"
                         }
                     }
                     
                     this.dataLoaded = true;
-                    
-                    this.query = this.$route.query.category
-                    if(this.query == "dining_full_service"){
-                      this.selectedCat = "Dining Full Service";
-                      this.filterByCategory;
-                    } else {
-                        this.selectedCat = "All";
-                        this.filteredStores = this.allStores;
-                    }
                 });
             },
             watch: {
-                $route: function() {
-                    this.query = this.$route.query.category
-                    if(this.query == "dining_full_service"){
-                      this.selectedCat = "Dining Full Service";
-                      this.filterByCategory;
-                    } else {
-                        this.selectedCat = "All";
-                        this.filteredStores = this.allStores;
-                    }    
-                },
                 selectedCat: function() {
                     this.$nextTick(function() {
                         Vue.prototype.$redrawVueMasonry();
@@ -249,7 +229,10 @@
             methods: {
                 loadData: async function() {
                     try {
-                        let results = await Promise.all([this.$store.dispatch("getData", "categories"), this.$store.dispatch("getData", "repos")]);
+                        let results = await Promise.all([
+                            this.$store.dispatch("getData", "categories"), 
+                            this.$store.dispatch("getData", "repos")
+                        ]);
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
                     }
