@@ -113,14 +113,14 @@
             },
             created (){
                 this.loadData().then(response => {
-                    // var temp_repo = this.findRepoByName('Events Banner').images;
-                    // if(temp_repo != null) {
-                    //     this.pageBanner = temp_repo[0];
-                    // } else {
+                    var temp_repo = this.findRepoByName('Events Banner').images;
+                    if(temp_repo != null) {
+                        this.pageBanner = temp_repo[0];
+                    } else {
                         this.pageBanner = {
                             "image_url": "//codecloud.cdn.speedyrails.net/sites/5c9e74a46e6f641b9b000000/image/png/1554994866000/miramesa_banner.png"
                         }
-                    // }
+                     }
 
                     if (_.isEmpty(this.eventList)) {
                         this.toggleEvents = false;
