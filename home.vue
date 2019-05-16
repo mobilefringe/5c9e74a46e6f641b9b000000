@@ -71,7 +71,7 @@
                     	    </div>
                         </div>
                     </div>
-                    <h2 class="home_title center">In Our Feed</h2>
+                    <h2 class="home_title center" v-if="instaFeed.length > 0">In Our Feed</h2>
                     <div class="row hidden-xs margin_60">
                         <div class="col-sm-8 col-sm-offset-2">
                             <div class="insta-feed-container">
