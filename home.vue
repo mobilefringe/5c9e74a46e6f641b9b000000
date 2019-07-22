@@ -218,6 +218,12 @@
                             url: ""
                         },
                         {
+                            image_url: "//codecloud.cdn.speedyrails.net/sites/5c9e74a46e6f641b9b000000/image/jpeg/1563827962000/prtc_treat619_1925x470_1.jpg",
+                            name: "Treat Yourself",
+                            description: "You deserve it.",
+                            url: "/stores"
+                        },
+                        {
                             image_url: "//codecloud.cdn.speedyrails.net/sites/5c9e74a46e6f641b9b000000/image/jpeg/1558047103994/mmm_dining_1925x470.jpg",
                             name: "Hungry?",
                             description: "We know just the place.",
