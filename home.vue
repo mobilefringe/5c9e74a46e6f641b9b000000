@@ -212,10 +212,10 @@
                     // REMOVE BANNERS POST LAUNCH
                     var temp_images = [
                         {
-                            image_url: "//codecloud.cdn.speedyrails.net/sites/5c9e74a46e6f641b9b000000/image/jpeg/1558047108761/mmm_home_1925x470.jpg",
-                            name: "",
-                            description: "",
-                            url: ""
+                            image_url: "//codecloud.cdn.speedyrails.net/sites/5c9e74a46e6f641b9b000000/image/jpeg/1558047103994/mmm_dining_1925x470.jpg",
+                            name: "Hungry?",
+                            description: "We know just the place.",
+                            url: "/dine"
                         },
                         {
                             image_url: "//codecloud.cdn.speedyrails.net/sites/5c9e74a46e6f641b9b000000/image/jpeg/1563827962000/prtc_treat619_1925x470_1.jpg",
@@ -224,11 +224,13 @@
                             url: "/stores"
                         },
                         {
-                            image_url: "//codecloud.cdn.speedyrails.net/sites/5c9e74a46e6f641b9b000000/image/jpeg/1558047103994/mmm_dining_1925x470.jpg",
-                            name: "Hungry?",
-                            description: "We know just the place.",
-                            url: "/dine"
+                            image_url: "//codecloud.cdn.speedyrails.net/sites/5c9e74a46e6f641b9b000000/image/jpeg/1558047108761/mmm_home_1925x470.jpg",
+                            name: "",
+                            description: "",
+                            url: ""
                         }
+                        
+                        
                     ]
                     return temp_images
                 },
