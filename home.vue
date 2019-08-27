@@ -21,15 +21,11 @@
                                 </div>
                             </div>
                             <div v-else-if="!banner.url">
-                                <div class="banner_image" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }">
-                                    <p style="display: none">{{ banner.name }}</p>
-                                </div>
+                                <div class="banner_image" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }"></div>
                             </div>
                             <div v-else>
-                                <a :href="banner.url">
-                                    <div class="banner_image" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }">
-                                        <p style="display: none">{{ banner.name }}</p>
-                                    </div>
+                                <a :href="banner.url" aria-label="banner.name">
+                                    <div class="banner_image" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }"></div>
                                 </a>
                             </div>
                         </div>
@@ -38,7 +34,7 @@
                 </div>
                 <messages-component></messages-component>
                 <div class="main_container">
-                    <h2 class="home_title center" v-if="featuredItems.length > 0">Events & Promotions</h2>
+                    <h2 class="home_title center" v-if="featuredItems && featuredItems.length > 0">Events & Promotions</h2>
                     <div class="row margin_40 home_events">
                         <div class="col-sm-4" v-if="featuredItems" v-for="item in featuredItems">
                     	    <div v-if="item.eventable_type" class="feature_item_container">
@@ -71,7 +67,7 @@
                     	    </div>
                         </div>
                     </div>
-                    <h2 class="home_title center" v-if="instaFeed.length > 0">In Our Feed</h2>
+                    <h2 v-if="instaFeed.length > 0" class="home_title center">In Our Feed</h2>
                     <div class="row hidden-xs margin_60">
                         <div class="col-sm-8 col-sm-offset-2">
                             <div class="insta-feed-container">
@@ -168,6 +164,7 @@
                 this.loadData().then(response => {
                     var socialFeed = response[3].data;
                     var social_feed = socialFeed.social.instagram;
+                    console.log(socialFeed)
                     this.instaFeed = _.slice(social_feed, [0], [6]);
                     this.instaFeed.map(insta => {
                         if(insta.caption != null){
@@ -188,51 +185,27 @@
                 ]),
                 homeBanners() {
                     var banners = [];
-                    // _.forEach(this.$store.state.banners, function (value, key) {
-                    //     var today = new Date();
-                    //     var start = new Date (value.start_date);
-                    //     if (start <= today){
-                    //         if (value.end_date){
-                    //             var end = new Date (value.end_date);
-                    //             if (end >= today){
-                    //                 banners.push(value);  
-                    //             }
-                    //         } else {
-                    //             banners.push(value);
-                    //         }
+                    _.forEach(this.$store.state.banners, function (value, key) {
+                        var today = new Date();
+                        var start = new Date (value.start_date);
+                        if (start <= today){
+                            if (value.end_date){
+                                var end = new Date (value.end_date);
+                                if (end >= today){
+                                    banners.push(value);  
+                                }
+                            } else {
+                                banners.push(value);
+                            }
                             
-                    //         if (value.cms_fields.subheader) {
-                    //             value.heading = value.cms_fields.subheader;
-                    //         }
-                    //     }
-                    // });
-                    // banners = _.orderBy(banners, function(o) { return o.position });
-                    // return banners
-                    
-                    // REMOVE BANNERS POST LAUNCH
-                    var temp_images = [
-                        {
-                            image_url: "//codecloud.cdn.speedyrails.net/sites/5c9e74a46e6f641b9b000000/image/jpeg/1558047103994/mmm_dining_1925x470.jpg",
-                            name: "Hungry?",
-                            description: "We know just the place.",
-                            url: "/dine"
-                        },
-                        {
-                            image_url: "//codecloud.cdn.speedyrails.net/sites/5c9e74a46e6f641b9b000000/image/jpeg/1563827962000/prtc_treat619_1925x470_1.jpg",
-                            name: "Treat Yourself",
-                            description: "You deserve it.",
-                            url: "/stores"
-                        },
-                        {
-                            image_url: "//codecloud.cdn.speedyrails.net/sites/5c9e74a46e6f641b9b000000/image/jpeg/1558047108761/mmm_home_1925x470.jpg",
-                            name: "",
-                            description: "",
-                            url: ""
+                            if (value.cms_fields.subheader) {
+                                value.heading = value.cms_fields.subheader;
+                            }
                         }
-                        
-                        
-                    ]
-                    return temp_images
+                    });
+                    
+                    banners = _.orderBy(banners, function(o) { return o.position });
+                    return banners
                 },
                 featuredItems() {
                     var promotions = [];
@@ -243,7 +216,7 @@
                         var showOnWebDate = moment.tz(value.show_on_web_date, this.timezone).format();
                         if (today >= showOnWebDate) {
                             if (_.includes(value.image_url, 'missing')) {
-                                value.image_url = "//codecloud.cdn.speedyrails.net/sites/5c9e74a46e6f641b9b000000/image/png/1554995111000/miramesa_default.png";
+                                value.image_url = "//codecloud.cdn.speedyrails.net/sites/5ca7ab216e6f6418b5120000/image/png/1554995470000/picorivera_default.png";
                             }
                             // Sort Featured Promotions
                             if (value.is_featured) {
@@ -269,7 +242,7 @@
                         var showOnWebDate = moment.tz(value.show_on_web_date, this.timezone).format();
                         if (today >= showOnWebDate) {
                             if (_.includes(value.image_url, 'missing')) {
-                                value.image_url = "//codecloud.cdn.speedyrails.net/sites/5c9e74a46e6f641b9b000000/image/png/1554995111000/miramesa_default.png";
+                                value.image_url = "//codecloud.cdn.speedyrails.net/sites/5ca7ab216e6f6418b5120000/image/png/1554995470000/picorivera_default.png";
                             }
                             // Sort Featured Events
                             if (value.is_featured) {
