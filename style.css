@@ -259,6 +259,23 @@ input[type="search"] {
 #header {
     padding: 21px 0 0 0;
     box-shadow: 1px 1px 7px rgba(12, 12, 12, 0.3);
+    .social_icon_container {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        .social_icon {
+            padding: 0 5px;
+            .fab {
+                font-size: 1.5rem;
+                color: #555;
+                transition: all 0.3s ease;
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+    
     .site_logo {
         padding: 10px 0 27px 0;
         max-width: 800px;
