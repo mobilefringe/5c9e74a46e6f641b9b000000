@@ -686,7 +686,7 @@ input[type="search"] {
                 -webkit-transform: translate(-50%, -50%);
                 -ms-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
-                font-size: 0.656rem;
+                font-size: 0.875rem;
                 line-height: normal;
                 color: #FFF;
                 text-align: center;
@@ -696,7 +696,7 @@ input[type="search"] {
                 position: absolute;
                 bottom: 10px;
                 left: 10px;
-                font-size: 0.656rem;
+                font-size: 0.875rem;
                 line-height: normal;
                 color: #FFF;
             }
@@ -768,7 +768,7 @@ input[type="search"] {
 }
 .page-breadcrumb {
     margin-bottom: 60px;
-    font-size: 0.8rem;
+    font-size: 0.875rem;
     line-height: normal;
     color: #585858;
     .breadcrumbs {
@@ -814,7 +814,7 @@ input[type="search"] {
     z-index: 1;
     border: 1px solid #fff;
     background: $primary;
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     line-height: normal;
     color: #000;
     text-align: center;
@@ -998,6 +998,8 @@ $anim-speed: 0.3s;
         border-radius: 0;
         background: #ebebeb;
         box-shadow: none;
+        font-size: 1rem;
+        line-height: inherit;
         color: #555759;
     }
     textarea.form-control {
@@ -1151,8 +1153,8 @@ $anim-speed: 0.3s;
 }
 .event_desc {
     margin-bottom: 10px;
-    font-size: 0.8rem;
-    line-height: 1.5rem;
+    // font-size: 0.8rem;
+    // line-height: 1.5rem;
     color: #000;
     img {
         max-width: 100%;
@@ -1327,7 +1329,7 @@ $anim-speed: 0.3s;
             background: #ebebeb;
             font-family: 'Montserrat', sans-serif;
             font-weight: 300;
-            font-size: 0.8125rem !important;
+            font-size: 1rem !important;
             line-height: normal !important;
             color: #555; 
         }
@@ -1432,7 +1434,7 @@ $anim-speed: 0.3s;
     margin: 46px 164px;
     label {
         font-weight: 300;
-        font-size: 0.8125rem;
+        font-size: 0.875rem;
         line-height: 1rem;
     }
     .form-control {
@@ -1440,6 +1442,8 @@ $anim-speed: 0.3s;
         border-radius: 0;
         background: #ebebeb;
         box-shadow: none;
+        font-size: 1rem;
+        line-height: inherit;
         color: #555759;
     }
     .alert-success, .alert-danger {
@@ -1467,7 +1471,7 @@ $anim-speed: 0.3s;
         height: 28px;
         border: none;
         background: transparent;
-        font-size: 0.8125rem;
+        // font-size: 0.8125rem;
         line-height: normal;
         color: #555;
     }
@@ -1478,7 +1482,7 @@ $anim-speed: 0.3s;
         position: absolute;
         top: 8px;
         right: 10px;
-        font-size: 0.875rem;
+        // font-size: 0.875rem;
         line-height: normal;
         color: #555;
         
@@ -1504,7 +1508,7 @@ $anim-speed: 0.3s;
             color: #555;
             p {
                 margin: 0;
-                font-size: 0.8125rem;
+                // font-size: 0.8125rem;
                 line-height: normal;
                 transition: all 0.3s ease;
             }
@@ -1529,7 +1533,7 @@ $anim-speed: 0.3s;
                 height: 30px;
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 300;
-                font-size: 0.8125rem !important;
+                // font-size: 0.8125rem !important;
                 line-height: normal !important;
                 color: #555; 
             }
@@ -1551,7 +1555,7 @@ $anim-speed: 0.3s;
             background: #ebebeb;
             font-family: 'Montserrat', sans-serif;
             font-weight: 300;
-            font-size: 0.8125rem !important;
+            font-size: 1rem !important;
             line-height: normal !important;
             color: #555; 
         }
@@ -1568,7 +1572,7 @@ $anim-speed: 0.3s;
             border-radius: 0;
             font-family: 'Montserrat', sans-serif;
             font-weight: 300;
-            font-size: 0.8125rem;
+            // font-size: 0.8125rem;
             line-height: normal;
             color: #555; 
         }  
@@ -1645,7 +1649,7 @@ $anim-speed: 0.3s;
         .store_tag_text {
             padding: 4px 0;
             width: 108px;
-            font-size: 0.65rem;
+            font-size: 0.75rem;
             color: #000;
             line-height: normal;
             letter-spacing: 0.6px;
@@ -1797,7 +1801,7 @@ $anim-speed: 0.3s;
     margin-bottom: 20px;
     padding: 0;
     list-style-type: none;
-    font-size: 1.083rem;
+    // font-size: 1.083rem;
     line-height: normal;
     li {
         margin-bottom: 20px;
@@ -1815,7 +1819,7 @@ $anim-speed: 0.3s;
         float: right;
     }
     .hours_vary {
-        font-size: 0.916rem;
+        font-size: 0.875rem;
         color: #000;
     }
 }
@@ -1969,6 +1973,23 @@ $anim-speed: 0.3s;
         ul {
             margin: 20px 0 0 0;
             padding: 0;
+        }
+        .mobile_social_icon_container {
+            margin: 50px auto 0 auto;
+            max-width: 300px;
+            text-align: center;
+            .social_title {
+                color: #FFF;
+                text-transform: uppercase;
+            }
+            .social_icon {
+                padding: 0 5px;
+                .fab {
+                    font-size: 2.5rem;
+                    color: #FFF;
+                    transition: all 0.3s ease;
+                }
+            }
         }
     }
     #mobile_nav ul .menu_item {
