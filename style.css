@@ -333,13 +333,13 @@ input[type="search"] {
                 color: #000;
                 &:hover, &:active, &:focus, &:visited {
             	    color: #fff;
+            	    background-color: rgb(103,113,81);
             	}
             	p {
             	    margin: 0;
             	}
                 a:hover {
                     color: inherit;
-                    // text-decoration: underline;
                 }
             }
         }
