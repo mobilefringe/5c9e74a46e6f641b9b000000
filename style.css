@@ -340,7 +340,6 @@ input[type="search"] {
                 a:hover {
                     color: inherit;
                     // text-decoration: underline;
-                    background-color: $secondary;
                 }
             }
         }
