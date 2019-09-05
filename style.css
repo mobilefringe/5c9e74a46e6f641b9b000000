@@ -789,7 +789,7 @@ input[type="search"] {
             }
             a {
                 // color: $primary;
-                background-color: rgb(103,113,81);
+                color: rgb(103,113,81);
             }
             .router-link-exact-active {
                 color: #000;
