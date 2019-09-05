@@ -321,7 +321,7 @@ input[type="search"] {
         	padding: 0;
         	display: none;
         	position: absolute;
-        	top: 101%;
+        	top: 100%;
         	left: 0;
         	background: $primary;
         	text-transform: none;
@@ -339,7 +339,8 @@ input[type="search"] {
             	}
                 a:hover {
                     color: inherit;
-                    text-decoration: underline;
+                    // text-decoration: underline;
+                    background-color: $secondary;
                 }
             }
         }
