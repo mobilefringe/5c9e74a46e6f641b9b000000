@@ -353,6 +353,7 @@ input[type="search"] {
     color: #fff;
     .newsletter_signup {
         background-color: $primary;
+        font-weight: 700;
         text-transform: uppercase;
         #newsletter_margin {
             margin: 30px 0;
@@ -406,7 +407,6 @@ input[type="search"] {
             border: 1px solid #000;
             background-color: transparent;
             font-family: 'Montserrat', sans-serif;
-            font-weight: 300;
             font-size: 1rem;
             line-height: 1rem;
             color: #000;
