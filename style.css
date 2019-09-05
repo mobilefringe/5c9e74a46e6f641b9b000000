@@ -334,7 +334,7 @@ input[type="search"] {
                 line-height: normal;
                 color: #000;
                 &:hover, &:active, &:focus, &:visited {
-            	    background: $secondary;
+            	    color: #fff;
             	}
             	p {
             	    margin: 0;
