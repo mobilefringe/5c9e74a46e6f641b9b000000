@@ -329,10 +329,16 @@ input[type="search"] {
         	text-transform: none;
             .dropdown_item {
                 padding: 10px;
-                min-width: 156px;
+                min-width: 136px;
                 font-size: 0.875rem;
                 line-height: normal;
                 color: #000;
+                &:hover, &:active, &:focus, &:visited {
+            	    background: $secondary;
+            	}
+            	p {
+            	    margin: 0;
+            	}
                 a:hover {
                     color: inherit;
                     text-decoration: underline;
@@ -1350,10 +1356,8 @@ $anim-speed: 0.3s;
         padding: 3px 0 3px 5px ;
         transition: all 0.3s ease;
         &:hover {
-            // color: $primary;
             cursor: pointer;
             background-color: $primary;
-            // color: #000;
         }
     }
 }
