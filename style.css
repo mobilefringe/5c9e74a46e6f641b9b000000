@@ -274,13 +274,14 @@ input[type="search"] {
     }
     
     .site_logo {
-        padding: 10px 0 27px 0;
-        max-width: 800px;
+        // padding: 10px 0 27px 0;
+        padding: 28px 0;
+        max-width: 360px;
         transition: all 0.3s ease;
         text-align: center;
-        img {
-            max-width: 40%;
-        }
+        // img {
+        //     max-width: 40%;
+        // }
     }
     .mini_logo {
         max-width: 500px;
