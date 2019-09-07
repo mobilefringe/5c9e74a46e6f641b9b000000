@@ -406,11 +406,13 @@ input[type="search"] {
             height: 34px;
             display: inline-block;
             border: 1px solid #000;
-            background-color: $secondary;
+            // background-color: transparent;
+            background: background-color: rgb(103,113,81);;
             font-family: 'Montserrat', sans-serif;
             font-size: 1rem;
             line-height: 1rem;
-            color: #444;
+            // color: #000;
+            color: #fff;
             text-transform: uppercase;
             transition: all 0.3s ease;
             &:before {
