@@ -355,12 +355,10 @@ input[type="search"] {
     background-color: #555;
     color: #fff;
     .newsletter_signup {
+        padding: 28px 0 32px 0;
         background-color: $primary;
         font-weight: 700;
         text-transform: uppercase;
-        #newsletter_margin {
-            margin: 30px 0;
-        }
         span {
             font-family: 'Roboto Condensed', sans-serif;
             color: #000;
@@ -408,11 +406,11 @@ input[type="search"] {
             height: 34px;
             display: inline-block;
             border: 1px solid #000;
-            background-color: transparent;
+            background-color: $secondary;
             font-family: 'Montserrat', sans-serif;
             font-size: 1rem;
             line-height: 1rem;
-            color: #000;
+            color: #444;
             text-transform: uppercase;
             transition: all 0.3s ease;
             &:before {
