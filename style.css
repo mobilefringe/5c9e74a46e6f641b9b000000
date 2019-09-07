@@ -276,10 +276,13 @@ input[type="search"] {
         padding: 28px 0;
         max-width: 360px;
         transition: all 0.3s ease;
-        text-align: center;
+        img {
+            max-width: 100%;
+        }
     }
     .mini_logo {
-        max-width: 500px;
+        padding: 18px 0;
+        max-width: 200px;
     }
 }
 .sticky {
