@@ -31,27 +31,27 @@ define([], function () {
                     ]
                 },
                 {
-                   path: '/jobs',
-                   component: view('default'),
-                   meta: {
-                      breadcrumb: 'Jobs'
-                   },
-                   children: [
-                      {
-                         path: '',
-                         component: view('jobs'),
-                         name: 'jobList'
-                      },
-                      {
-                         path: ':id',
-                         component: view('job_details'),
-                         meta: {
+                    path: '/jobs',
+                    component: view('default'),
+                    meta: {
+                        breadcrumb: 'Jobs'
+                    },
+                    children: [
+                        {
+                            path: '',
+                            component: view('jobs'),
+                            name: 'jobList'
+                        },
+                        {
+                            path: ':id',
+                            component: view('job_details'),
+                            meta: {
                             breadcrumb: 'Jobs'
-                         },
-                         name: 'jobDetails',
-                         props: true
-                      }
-                   ]
+                        },
+                            name: 'jobDetails',
+                            props: true
+                        }
+                    ]
                 },
                 {
                     path: '/leasing',
