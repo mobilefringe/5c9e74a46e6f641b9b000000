@@ -71,7 +71,7 @@
                                         </label>
         						    </div>
         						    <div class="col-xs-12">
-        						        <p>For more details about personal privacy, please read our <a href="" target="_blank">Privacy Policy</a>.</p>
+        						        <p>For more details about personal privacy, please read our <a href="/pages/miramesa-privacy-policy" target="_blank">Privacy Policy</a>. <a href="/pages/miramesa-rules-regulations" target="_blank">Click here</a> for the Contest Rules & Regulations.</p>
                                     </div>
                                 </div>
                                 <div class="form-group">
