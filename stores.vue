@@ -25,7 +25,7 @@
         		        </div>
         		        <div class="col-md-6 clearfix">
         		            <div class="store_search">
-            					<search-component :list="allStores" placeholder="Search" suggestion-attribute="name" v-model="search_result" @select="onOptionSelect" class="text-left" :id="inputID">
+            					<search-component :list="allStores" placeholder="Search" suggestion-attribute="name" v-model="search_result" @select="onOptionSelect" class="text-left">
             						<template slot="item" scope="option" class="manual">
             							<article class="media">
             								<p>{{ option.data.name }}</p>
