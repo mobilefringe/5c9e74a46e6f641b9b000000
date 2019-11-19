@@ -72,7 +72,7 @@
                         <div class="col-sm-8 col-sm-offset-2">
                             <div class="insta-feed-container">
                                 <div class="insta-feed-image " v-for="(item, index) in instaFeed">
-                                    <a :href="item.link" target="_blank" >
+                                    <a :href="item.link" target="_blank" role="presentation">
                                         <div class="insta-img" v-bind:style="{ 'background-image': 'url(' + item.images.standard_resolution.url + ')' }"></div>
                                         <div class="insta_content" role="presentation">
                                             <p class="insta_caption">{{ item.caption.text }}</p>
