@@ -72,9 +72,9 @@
                         <div class="col-sm-8 col-sm-offset-2">
                             <div class="insta-feed-container">
                                 <div class="insta-feed-image " v-for="(item, index) in instaFeed">
-                                    <a :href="item.link" target="_blank" tabindex="-1">
+                                    <a :href="item.link" target="_blank" :aria-label="item.caption.text" @"item.user.username" >
                                         <div class="insta-img" v-bind:style="{ 'background-image': 'url(' + item.images.standard_resolution.url + ')' }"></div>
-                                        <div class="insta_content" tabindex="-1">
+                                        <div class="insta_content" >
                                             <p class="insta_caption">{{ item.caption.text }}</p>
                                             <p class="insta_user">@{{ item.user.username }}</p>
                                             <i class="insta_icon fab fa-instagram"></i>
