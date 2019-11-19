@@ -685,7 +685,7 @@ input[type="search"] {
                 transform: translate(-50%, -50%);
                 font-size: 0.875rem;
                 line-height: normal;
-                color: #FFF;
+                color: #000;
                 text-align: center;
             }
             .insta_user {
@@ -695,7 +695,7 @@ input[type="search"] {
                 left: 10px;
                 font-size: 0.875rem;
                 line-height: normal;
-                color: #FFF;
+                color: #000;
             }
             .insta_icon {
                 position: absolute;
@@ -703,7 +703,7 @@ input[type="search"] {
                 bottom: 10px;
                 font-size: 1.038rem;
                 line-height: normal;
-                color: #FFF;
+                color: #000;
             }
         }
         a:hover {
@@ -714,7 +714,8 @@ input[type="search"] {
                 visibility: visible;
                 position: absolute;
                 top: 0;
-                background: rgba(0,0,0,0.5);
+                // background: rgba(0,0,0,0.5);
+                background: $primary;
             }    
         }
     }
