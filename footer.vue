@@ -7,8 +7,8 @@
                         <span>Sign up to receive the latest deals and news!</span>
                         <!--<label for="userName" class="accessibility">Enter Name</label>-->
                         <input id="userName" aria-label="newsletter_name" v-model="newsletter_name" type="text" placeholder="Name*" class="newsletter_control" required />
-                        <label for="emailAddress" class="accessibility">Enter Email Address</label>
-                        <input id="emailAddress" v-model="newsletter_email" type="text" placeholder="Email*" class="newsletter_control" required />
+                        <!--<label for="emailAddress" class="accessibility">Enter Email Address</label>-->
+                        <input id="emailAddress" aria-label="newsletter_name" v-model="newsletter_email" type="text" placeholder="Email*" class="newsletter_control" required />
                         <button @click="newsletterRoute" class="animated_btn">Sign Up</button>
                     </div>
                 </div>
