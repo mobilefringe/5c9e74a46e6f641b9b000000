@@ -387,7 +387,8 @@ input[type="search"] {
             font-family: 'Montserrat', sans-serif;
             font-size: 0.8125rem;
             font-weight: 300;
-            color: #959595;
+            // color: #959595;
+            color:; #8d8d8d;
         }
         #userName::-webkit-input-placeholder, #emailAddress::-webkit-input-placeholder {
             font-family: 'Montserrat', sans-serif;
