@@ -27,14 +27,14 @@
                     <p>{{ getPropertyAddress }}</p>
                     <p v-if="property.contact_phone" class="margin_40"><a :href="'tel:' + property.contact_phone">{{ property.contact_phone }}</a></p>
                     <div class="footer_links">
-                        <p><a :href="'/pages/'+siteInfo.subdomain+'-privacy-policy/'" target="_blank">Privacy Policy</a></p>
+                        <p><a :href="'/pages/'+siteInfo.subdomain+'-privacy-policy/'" >Privacy Policy</a></p>
                     </div>
                 </div>
             </div>
             <div class="copyright">
                 <div class="row main_container">
                     <div class="col-md-12">
-                        <p class="footer_text">&#169; {{copyright_year}} <a :href="siteInfo.propertyManagementURL" >{{ siteInfo.propertyManagementName }}</a>. All rights reserved. | Powered by <a href="https://www.mallmaverick.com/" target="_blank">Mall Maverick</a></p>
+                        <p class="footer_text">&#169; {{copyright_year}} <a :href="siteInfo.propertyManagementURL" target="_blank">{{ siteInfo.propertyManagementName }}</a>. All rights reserved. | Powered by <a href="https://www.mallmaverick.com/" target="_blank">Mall Maverick</a></p>
                     </div>
                 </div>
             </div>
