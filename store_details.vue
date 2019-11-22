@@ -260,7 +260,7 @@
                             temp_promo.push(current_promo);
                         }); 
                         this.storePromotions = temp_promo;
-                        console.log(his.storePromotions)
+                        console.log(this.storePromotions)
     
                         var vm = this;
                         var temp_event = [];
