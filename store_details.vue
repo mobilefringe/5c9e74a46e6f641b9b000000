@@ -57,7 +57,7 @@
                                     <div class="col-md-6" v-if="storeEvents" v-for="item in storeEvents">
                                         <div class="feature_item_container">
                                 	        <router-link class="tile" :to="'/events/' + item.slug">
-                                    			<img :src="item.image_url" :alt="item.name">
+                                    			<img :src="item.image_url" alt="">
                                 				<div class="details">
                         					    	<span class="title">
                         					            <h3>{{ item.name }}</h3>
