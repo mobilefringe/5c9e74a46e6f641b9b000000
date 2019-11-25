@@ -178,6 +178,7 @@
                         }
                     });
                     
+                    this.meta = this.findMetaDataByPath(this.$route.path);
                     this.dataLoaded = true;  
                 });
             },
