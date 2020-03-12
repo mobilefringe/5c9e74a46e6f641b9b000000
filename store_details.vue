@@ -266,7 +266,7 @@
                         this.storeHours = _.sortBy(storeHours, function(o) { return o.day_of_week });
                         
                         // DELIVERY
-                        var delivery_category = 8875;
+                        var delivery_category = 8906;
                         var categories = this.currentStore.categories;
                         var subcategories = this.currentStore.subcategories;
                         if (_.includes(categories, delivery_category) && !_.isEmpty(subcategories)) {
